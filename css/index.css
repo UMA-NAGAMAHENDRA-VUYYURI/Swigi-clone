@@ -1,0 +1,314 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body{
+    top: 0;
+    margin: 0;
+    position: relative;
+    /* overflow: hidden; */
+}
+header{
+    background-color:#ff5200;
+    width: 100%;
+    height:50% !important;
+    color: white;
+    text-decoration: none;
+    margin: 0%;
+    padding: auto;
+}
+.nav-bar{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: right !important;
+        -ms-flex-align: right !important;
+            align-items: right !important;
+    width: 100%;
+    height: 20% !important;
+    /* padding: 10px; */
+    
+}
+.top-bar{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+    /* margin: 15px; */
+    margin-top: 30px;
+   
+}
+a{
+    text-decoration: none !important;
+    color: white;
+}
+.logo a img{
+    width: 90%;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+}
+.nav-options{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    right: 0;
+    gap: 30px;
+}
+.get-app{
+    height: 60px;
+    width: 150px;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px ;
+
+}
+.sign-in{
+    height: 59px;
+    width: 120px;
+    text-align: center;
+    background-color: black;
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 10px ;
+}
+.section-1{
+    background-color: #ff5200;
+    color: white;
+    height: 700px;
+}
+.nav-down{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.left-image .image{
+    width: 80%;
+    height: 50%;
+    left: 0;
+    margin-top: -30px;
+    /* position: relative; */  
+}
+.top-text-center h1{
+    text-align: center;
+    width: 85%;
+    margin-top: -25%;
+    font-size: 50px;
+    /* font-family: Gilroy_Bold; */
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    line-height: 56px;
+    top: 0;
+}
+.center-text-wrap{
+    display: flexbox;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* flex-wrap: nowrap; */
+}
+.image{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+
+}
+.right-image .img{
+    width: 250px;
+    right:0;
+    margin-top: -35%;
+}
+.search-bar{
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* justify-content: space-around; */
+    text-align: center;
+    padding: 5px;
+    gap: 10px;
+}
+.input-location input{
+    height: 54px;
+    width: 320px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+}
+.input-menu input{
+    height: 54px;
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+}
+.menu-boxes{
+    margin-top: -250px;
+}
+.boxes{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+
+}
+.specific a img{
+    height: 280px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15%;
+    color: gray;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow: scroll;
+}
+.section-2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 600px;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.dishes{
+    height: 100%;
+    width: 90%;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    /* overflow-x:scroll; */
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    
+}
+ .menu-dishes{
+    height: 45%;
+    width: 80%;
+    display: flex;
+    /* overflow-x:scroll; */
+    overflow-y: hidden;
+    scroll-behavior: smooth;  
+}
+ .menu-dishes img{
+    height: 190px;
+    width: 190px;
+} 
+.dishes-wrap h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+.section-3{
+    margin: 30px;
+}
+.section-3 img{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+.instamart{
+    height: 100%;
+    width: 90%;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    /* overflow-x:scroll; */
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+.menu-instamart{
+    height: 45%;
+    width: 80%;
+    display: flex;
+    gap: 15px;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;  
+}
+.menu-instamart img {
+    color: black;
+    height: 190px;
+    width: 190px;
+}
+.instamart-wrap h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+.section-5 img{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+.insamart-text{
+    color: #000;
+}
