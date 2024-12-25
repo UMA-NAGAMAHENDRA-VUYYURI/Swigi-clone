@@ -15,7 +15,8 @@ A simple clone of the Swiggy homepage built using **HTML**, **CSS**, and **React
 - **React**: For building reusable components and managing the UI.
 
 ## 📂 Project Structure
- Swigi-clone/
+ ```text
+Swigi-clone/
 ├── public/
 │   └── index.html
 ├── src/
@@ -26,7 +27,7 @@ A simple clone of the Swiggy homepage built using **HTML**, **CSS**, and **React
 │   └── App.js
 ├── package.json
 └── README.md
-🖥️ Installation and Setup
+##🖥️ Installation and Setup
 Clone the repository:
 bash
 Copy code
@@ -44,7 +45,7 @@ bash
 Copy code
 npm start
 Open your browser and visit http://localhost:3000 to see the homepage.
-📷 Screenshots
+##📷 Screenshots
 Add screenshots or a demo video of your project here to showcase its UI and functionality.
 
 🙌 Acknowledgments
