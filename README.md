@@ -14,30 +14,37 @@ A simple clone of the Swiggy homepage built using **HTML**, **CSS**, and **React
 - **CSS3**: For styling and layout.
 - **React**: For building reusable components and managing the UI.
 
+## 📷 Screenshots
+
+  Add screenshots or a demo video of your project here to showcase its UI and functionality.
+
+## 🙌 Acknowledgments
+- Inspired by Swiggy.
+- Thanks to the React and CSS communities for their support and resources.
+  
 ## 🖥️ Installation and Setup
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Sanskriti65/Swigi-clone.git
-##📷 Screenshots
-Add screenshots or a demo video of your project here to showcase its UI and functionality.
+2. Navigate to the project directory:
+   ```bash
+   cd Swigi-clone
+3. Install dependencies:
+   ```bash
+   npm install
+5. Start the development server:
+   ```bash
+   npm start
+    
+##  📝 License
+  This project is licensed under the MIT License - see the LICENSE file for details.
+  
+## 🤝 Contributing
+  Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
 
-##🙌 Acknowledgments
-Inspired by Swiggy.
-Thanks to the React and CSS communities for their support and resources.
-## 📂 Project Structure
- ```text
-Swigi-clone/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   └── [React Components]
-│   ├── styles/
-│   │   └── [CSS files]
-│   └── App.js
-├── package.json
-└── README.md 
-    text```
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+##  📫 Contact
+  - For any inquiries, please reach out to shuklasanskrit70@gmail.com.
+  -  You can also connect with me on www.linkedin.com/in/sanskriti-shukla-03ab89292.
+
+
