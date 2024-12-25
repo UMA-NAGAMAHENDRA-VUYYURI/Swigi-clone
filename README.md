@@ -1,15 +1,20 @@
-Swigi Clone - Homepage
-A simple clone of the Swiggy homepage built using HTML, CSS, and React. This project is designed to mimic the look and feel of the original Swiggy homepage and serves as a practice project to enhance web design and frontend development skills.
+# Swigi Clone - Homepage
 
-🚀 Features
-Responsive layout for a seamless experience across devices.
-Eye-catching design inspired by the original Swiggy homepage.
-Clean and modular code structure.
-🛠️ Technologies Used
-HTML5: For structuring the webpage.
-CSS3: For styling and layout.
-React: For building reusable components and managing the UI.
-📂 Project Structure
+A simple clone of the Swiggy homepage built using **HTML**, **CSS**, and **React**. This project is designed to mimic the look and feel of the original Swiggy homepage and serves as a practice project to enhance web design and frontend development skills.
+
+## 🚀 Features
+
+- Responsive layout for a seamless experience across devices.
+- Eye-catching design inspired by the original Swiggy homepage.
+- Clean and modular code structure.
+
+## 🛠️ Technologies Used
+
+- **HTML5**: For structuring the webpage.
+- **CSS3**: For styling and layout.
+- **React**: For building reusable components and managing the UI.
+
+## 📂 Project Structure
  Swigi-clone/
 ├── public/
 │   └── index.html
