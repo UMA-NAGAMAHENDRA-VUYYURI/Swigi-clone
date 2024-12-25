@@ -14,6 +14,17 @@ A simple clone of the Swiggy homepage built using **HTML**, **CSS**, and **React
 - **CSS3**: For styling and layout.
 - **React**: For building reusable components and managing the UI.
 
+## 🖥️ Installation and Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sanskriti65/Swigi-clone.git
+##📷 Screenshots
+Add screenshots or a demo video of your project here to showcase its UI and functionality.
+
+##🙌 Acknowledgments
+Inspired by Swiggy.
+Thanks to the React and CSS communities for their support and resources.
 ## 📂 Project Structure
  ```text
 Swigi-clone/
@@ -26,30 +37,7 @@ Swigi-clone/
 │   │   └── [CSS files]
 │   └── App.js
 ├── package.json
-└── README.md
-##🖥️ Installation and Setup
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/Sanskriti65/Swigi-clone.git
-Navigate to the project directory:
-bash
-Copy code
-cd Swigi-clone
-Install dependencies:
-bash
-Copy code
-npm install
-Start the development server:
-bash
-Copy code
-npm start
-Open your browser and visit http://localhost:3000 to see the homepage.
-##📷 Screenshots
-Add screenshots or a demo video of your project here to showcase its UI and functionality.
-
-🙌 Acknowledgments
-Inspired by Swiggy.
-Thanks to the React and CSS communities for their support and resources.
+└── README.md 
+    text```
 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
