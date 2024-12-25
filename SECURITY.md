@@ -5,17 +5,18 @@
 Use this section to tell people about which versions of your project are
 currently being supported with security updates.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Version | Supported             |
+| ------- | ------------------    |
+| 1.x     | :✅ Fully supported:  |
+| < 1.0   | :❌ Not supported:    |               |
+
 
 ## Reporting a Vulnerability
+  If you discover a security vulnerability in this project, please report it by following the steps below:
 
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+  - Contact Us: Send an email to shuklasanskrit70@gmail.com with the subject "Security Vulnerability Report - Swigi Clone".
+  - Include Details: Provide a detailed description of the issue, including steps to reproduce it, potential impact, and any suggested fixes.
+  - Response Time: We aim to respond to all reports within 48 hours.
+  - Disclosure: We appreciate your discretion in not publicly disclosing the issue until we have addressed it.
+## Commitment
+  We are committed to maintaining the security of this project. Your contributions to identifying and resolving potential vulnerabilities are greatly appreciated.
