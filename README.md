@@ -14,10 +14,6 @@ A simple clone of the Swiggy homepage built using **HTML**, **CSS**, and **React
 - **CSS3**: For styling and layout.
 - **React**: For building reusable components and managing the UI.
 
-## 📷 Screenshots
-
-  Add screenshots or a demo video of your project here to showcase its UI and functionality.
-
 ## 🙌 Acknowledgments
 - Inspired by Swiggy.
 - Thanks to the React and CSS communities for their support and resources.
@@ -36,7 +32,12 @@ A simple clone of the Swiggy homepage built using **HTML**, **CSS**, and **React
 5. Start the development server:
    ```bash
    npm start
-    
+ ## 📷 Screenshots
+  Add screenshots or a demo video of your project here to showcase its UI and functionality.
+  ![Screenshot 2024-12-24 115058](https://github.com/user-attachments/assets/d979df90-cb0f-4890-9919-4552f8535bce)
+  ![Screens![Screenshot 2024-12-26 192244](https://github.com/user-attachments/assets/9486b85d-88f3-4427-95fb-692ef4bdabe8)
+  ![Screenshot 2024-12-26 192244](https://github.com/user-attachments/assets/6d6d369a-b0bd-499c-b69a-e811cf560ffb)
+
 ##  📝 License
   This project is licensed under the MIT License - see the LICENSE file for details.
   
