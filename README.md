@@ -35,7 +35,7 @@ A simple clone of the Swiggy homepage built using **HTML**, **CSS**, and **React
  ## 📷 Screenshots
   Add screenshots or a demo video of your project here to showcase its UI and functionality.
   ![Screenshot 2024-12-24 115058](https://github.com/user-attachments/assets/d979df90-cb0f-4890-9919-4552f8535bce)
-  ![Screens![Screenshot 2024-12-26 192244](https://github.com/user-attachments/assets/9486b85d-88f3-4427-95fb-692ef4bdabe8)
+  ![Screenshot 2024-12-26 192655](https://github.com/user-attachments/assets/8fb43984-2b65-4bfb-b09b-64bfa1f304b3)
   ![Screenshot 2024-12-26 192244](https://github.com/user-attachments/assets/6d6d369a-b0bd-499c-b69a-e811cf560ffb)
 
 ##  📝 License
