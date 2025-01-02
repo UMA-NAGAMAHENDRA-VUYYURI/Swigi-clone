@@ -1,10 +1,14 @@
 /* MainSection4.css */
 
 .section-4 {
-  width: 100%;
+  /* width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px; */
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+  min-width: 1240px;
 }
 
 .container {
@@ -32,6 +36,8 @@
   gap: 15px;
   overflow-x: auto;
   scroll-behavior: smooth;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-instamart img {
@@ -75,6 +81,7 @@
 
   .menu-instamart {
     gap: 10px;
+    justify-content: center;
   }
 
   .menu-instamart img {
