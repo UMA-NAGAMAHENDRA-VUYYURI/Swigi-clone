@@ -1,3 +1,8 @@
+Merge branch 'main' of https://github.com/Sanskriti65/Swigi-clone #2
+Jobs
+Run details
+Workflow file for this run
+.github/workflows/workflow.yml at 894f9da
 name: Deploy to GitHub Pages
 
 on:
