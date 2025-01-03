@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // Change here
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './index.css';
