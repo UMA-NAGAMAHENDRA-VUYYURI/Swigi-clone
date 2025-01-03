@@ -1,14 +1,9 @@
-Merge branch 'main' of https://github.com/Sanskriti65/Swigi-clone #2
-Jobs
-Run details
-Workflow file for this run
-.github/workflows/workflow.yml at 894f9da
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main  
+      - main
 
 jobs:
   build:
@@ -18,10 +13,18 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v3
 
+    - name: Cache Node modules
+      uses: actions/cache@v3
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-modules-
+
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 16  # Use the Node.js version you are working with
+        node-version: 16
 
     - name: Install Dependencies
       run: npm install
