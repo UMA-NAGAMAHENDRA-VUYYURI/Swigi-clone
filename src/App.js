@@ -6,6 +6,7 @@ import MainSection2 from './components/MainSection2';
 import MainSection3 from './components/MainSection3';
 import MainSection4 from './components/MainSection4';
 import MainSection5 from './components/MainSection5';
+import BestPlacesSection from './components/BestPlacesSection';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap once in your entry point
 
@@ -19,6 +20,7 @@ function App() {
       <MainSection3 />
       <MainSection4 />
       <MainSection5 />
+      <BestPlacesSection />
     </div>
   );
 }
