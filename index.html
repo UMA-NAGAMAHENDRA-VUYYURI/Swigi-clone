@@ -6,34 +6,47 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <body>
-    <header>
-        <div class="nav-bar">
-            <div class="top-bar">
-                <div class="logo">
-                    <a href="">
-                        <img src="./image/Swiggy_logo_bml6he.png" alt="">
-                    </a>
-                </div>
-                <div class="nav-options">
-                <div>
-                    <a href=""><h4>Swiggy Corporate</h4></a>   
-                </div>
-                <div>
-                    <a href=""> <h4>Partner with us</h4></a> 
-                </div>
-                <div class="get-app">
-                    <a href=""><p>Get the App 
-                        <i  class="fa fa-long-arrow-up icon" aria-hidden="true"></i></p>
-                    </a>   
-                </div>
-                <div class="sign-in">
-                    <a href=""><h3>Sign in</h3></a>
-                </div>
+    <header class="navbar">
+        <div class="navbar-container">
+          <!-- Left Section -->
+          <div class="navbar-left">
+            <!-- Logo -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png" alt="Swiggy Logo" class="logo">
+    
+            <!-- Dropdown -->
+            <div class="dropdown">
+              <span>Other <i class="fas fa-chevron-down"></i></span>
+              <div class="dropdown-content">
+                <a href="#">Location 1</a>
+                <a href="#">Location 2</a>
+              </div>
             </div>
+          </div>
+    
+          <!-- Right Section -->
+          <div class="navbar-right">
+            <a href="#" class="navbar-link">
+              <i class="fas fa-briefcase"></i> Swiggy Corporate
+            </a>
+            <a href="#" class="navbar-link">
+              <i class="fas fa-search"></i> Search
+            </a>
+            <a href="#" class="navbar-link">
+              <i class="fas fa-tags"></i> Offers <span class="new-badge">NEW</span>
+            </a>
+            <a href="#" class="navbar-link">
+              <i class="fas fa-question-circle"></i> Help
+            </a>
+            <a href="#" class="navbar-link">
+              <i class="fas fa-user"></i> Sign In
+            </a>
+            <a href="#" class="navbar-link cart">
+              <i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span>
+            </a>
+          </div>
         </div>
-    </div>
 </header>
 
 
@@ -277,5 +290,6 @@
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
