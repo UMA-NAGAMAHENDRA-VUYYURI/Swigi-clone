@@ -13,14 +13,13 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap once in your 
 function App() {
   return (
     <div>
-      
       <Header />
       <MainSection1 />
       <MainSection2 />
       <MainSection3 />
       <MainSection4 />
-      <MainSection5 />
       <BestPlacesSection />
+      <MainSection5 />
     </div>
   );
 }
