@@ -39,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "A simple clone of the Swiggy homepage built using **HTML**, **CSS**, and **React**. This project is designed to mimic the look and feel of the original Swiggy homepage and serves as a practice project to enhance web design and frontend development skills.",
+  "main": "script.js",
+  "author": "",
+  "license": "ISC"
 }
