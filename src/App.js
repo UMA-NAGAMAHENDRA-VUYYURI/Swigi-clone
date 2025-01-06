@@ -7,12 +7,14 @@ import MainSection3 from './components/MainSection3';
 import MainSection4 from './components/MainSection4';
 import MainSection5 from './components/MainSection5';
 import BestPlacesSection from './components/BestPlacesSection';
+import  BottomNavbar  from './components/BottomNavbar';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap once in your entry point
 
 function App() {
   return (
     <div>
+      
       <Header />
       <MainSection1 />
       <MainSection2 />
@@ -20,6 +22,8 @@ function App() {
       <MainSection4 />
       <BestPlacesSection />
       <MainSection5 />
+      
+      <BottomNavbar/>
     </div>
   );
 }
