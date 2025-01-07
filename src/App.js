@@ -8,6 +8,9 @@ import MainSection4 from './components/MainSection4';
 import MainSection5 from './components/MainSection5';
 import BestPlacesSection from './components/BestPlacesSection';
 import  BottomNavbar  from './components/BottomNavbar';
+import  MobileNavbar  from './components/MobileNavbar';
+import  ContactUs  from './components/ContactUs';
+import  Login  from './components/Login';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap once in your entry point
 
@@ -21,8 +24,9 @@ function App() {
       <MainSection3 />
       <MainSection4 />
       <BestPlacesSection />
-      <MainSection5 />
-      
+      <MobileNavbar/>
+      <ContactUs/>
+      <Login/>
       <BottomNavbar/>
     </div>
   );
