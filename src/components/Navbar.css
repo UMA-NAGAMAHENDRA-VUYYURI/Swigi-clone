@@ -23,6 +23,7 @@ body {
   /* Bottom Navbar Styles */
   .bottom-navbar {
     display: flex;
+    bottom: 20px;
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
@@ -68,9 +69,9 @@ body {
   }
   
   /* Desktop View (Optional) */
-  @media (min-width: 769px) {
+  @media (min-width: 1024px) {
     .bottom-navbar {
-      display:none ;
+      justify-content: space-evenly;
     }
   
     .nav-item {
