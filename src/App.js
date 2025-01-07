@@ -10,9 +10,9 @@ import BestPlacesSection from './components/BestPlacesSection';
 import  BottomNavbar  from './components/BottomNavbar';
 import  MobileNavbar  from './components/MobileNavbar';
 import  ContactUs  from './components/ContactUs';
-
+import  Login  from './components/Login';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap once in your entry point
-import ContactUs from './components/ContactUs';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -23,10 +23,11 @@ function App() {
       <MainSection2 />
       <MainSection3 />
       <MainSection4 />
-      <BestPlacesSection />
       <MainSection5 />
+      <BestPlacesSection />
       <MobileNavbar/>
       <ContactUs/>
+      <Login/>
       <BottomNavbar/>
     </div>
   );
