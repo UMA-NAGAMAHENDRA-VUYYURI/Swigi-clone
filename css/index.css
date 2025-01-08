@@ -169,6 +169,7 @@ a{
     text-align: center;
     padding: 5px;
     gap: 10px;
+    margin-bottom: 20px;
 }
 .input-location input{
     height: 54px;
@@ -189,7 +190,7 @@ a{
     padding: 10px;
 }
 .menu-boxes{
-    margin-top: -250px;
+    margin-top:-80px;
 }
 .boxes{
     display: -webkit-box;
