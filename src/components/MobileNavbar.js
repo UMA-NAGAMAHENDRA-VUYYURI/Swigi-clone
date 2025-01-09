@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import "./MobileNavbar.css";
 
 
 const MobileNavbar = () => {
