@@ -1,4 +1,5 @@
 // src/App.js
+import './index.css';
 import React from 'react';
 import Header from './components/Header'; // Ensure these paths are correct
 import MainSection1 from './components/MainSection1';
@@ -11,6 +12,7 @@ import  BottomNavbar  from './components/BottomNavbar';
 import  MobileNavbar  from './components/MobileNavbar';
 import  ContactUs  from './components/ContactUs';
 import  Login  from './components/Login';
+import { Footer } from './components/footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap once in your entry point
 
@@ -24,10 +26,8 @@ function App() {
       <MainSection3 />
       <MainSection4 />
       <BestPlacesSection />
-      <MobileNavbar/>
       <ContactUs/>
-      <Login/>
-      <BottomNavbar/>
+      <Footer/>
     </div>
   );
 }
