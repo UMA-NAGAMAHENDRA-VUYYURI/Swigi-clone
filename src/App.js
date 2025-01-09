@@ -1,5 +1,5 @@
 // src/App.js
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header'; // Ensure these paths are correct
 import MainSection1 from './components/MainSection1';
 import MainSection2 from './components/MainSection2';
@@ -13,12 +13,18 @@ import  ContactUs  from './components/ContactUs';
 import  Login  from './components/Login';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap once in your entry point
+import SidePanelModal from './components/SidePanelModal';
 
 function App() {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
   return (
     <div>
       
-      <Header />
+      <Header toggleSidebar={toggleSidebar}/>
       <MainSection1 />
       <MainSection2 />
       <MainSection3 />
@@ -26,6 +32,7 @@ function App() {
       <BestPlacesSection />
       <MobileNavbar/>
       <ContactUs/>
+      <SidePanelModal isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <Login/>
       <BottomNavbar/>
     </div>
