@@ -13,7 +13,8 @@ import  BottomNavbar  from './components/BottomNavbar';
 import  MobileNavbar  from './components/MobileNavbar';
 import  ContactUs  from './components/ContactUs';
 import  Login  from './components/Login';
-import { Footer } from './components/footer';
+import Footer  from './components/Footer';
+import Instamart  from './components/Instamart';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap once in your entry point
 
@@ -27,8 +28,9 @@ function App() {
       <MainSection3 />
       <MainSection4 />
       <BestPlacesSection />
-
+      <Login/>
       <BestGroceries/>
+      <Instamart/>
       <MobileNavbar/>
     </div>
   );
