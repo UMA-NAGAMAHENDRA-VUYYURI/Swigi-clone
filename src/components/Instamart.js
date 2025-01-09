@@ -1,8 +1,9 @@
 import React from "react";
 import "./Instamart.css"; // Add your CSS file
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Link } from 'react-router-dom';
 
-const categories = [
+const categories = () => [
   { img: "../../images/image/frui2.avif", title: "Fresh Fruit" },
   { img: "../../images/image/veg.avif", title: "Fresh Vegetables" },
   { img: "../../images/image/fruit4.avif", title: "Atta, Rice, and Dals" },

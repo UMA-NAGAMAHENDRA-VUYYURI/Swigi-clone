@@ -1,6 +1,6 @@
 import React from "react";
 import "./Index.css"; // Add your navbar-specific CSS
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <header className="navbar">
