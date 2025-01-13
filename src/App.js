@@ -13,7 +13,7 @@ import  BottomNavbar  from './components/BottomNavbar';
 import  MobileNavbar  from './components/MobileNavbar';
 import  ContactUs  from './components/ContactUs';
 import  Login  from './components/Login';
-import Footer  from './components/Footer';
+import Footer  from './components/footer';
 import Instamart  from './components/Instamart';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap once in your entry point
