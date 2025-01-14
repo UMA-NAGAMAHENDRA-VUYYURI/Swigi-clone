@@ -1,8 +1,9 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Header.css'; // Make sure to create a corresponding CSS file
 
-function Header() {
+const Header = () => {
   return (
     <header>
       <div className="nav-bar clearfix">
@@ -21,7 +22,9 @@ function Header() {
               </a>
             </div>
             <div className="sign-in">
+            <Link to="/signup">
               <a href="/signup">Sign in</a>
+              </Link>
             </div>
           </div>
         </div>
