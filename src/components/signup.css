@@ -15,23 +15,24 @@
     --labelColor: #FC4A1Af;
 }
 
-/* html {
-    font-size: 62.5%;
+html {
+    
     scroll-behavior: smooth;
-} */
+}
 
-/* body {
+    .container1{
     background: linear-gradient(to right, #FC4A1A, var(--mainColor));
     font-weight: 400;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    font-size: 1%;
     display: grid;
     place-content: center;
     overflow: hidden;
-} */
+}
 
 .wrapper {
     position: relative;
-    width: 35rem;
+    width: 30rem;
     height: 50rem;
 }
 

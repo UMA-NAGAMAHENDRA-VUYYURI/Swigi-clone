@@ -8,7 +8,7 @@ const MobileNavbar = () => {
     <nav className="bottom-navbar">
       <div className="nav-item">
         <i className="fas fa-home"></i>
-        <Link to ="./Header./MainSection1./MainSection3./MainSection4./MainSection5">
+        <Link to ="./Home">
         <span>Home</span>
         </Link>
       </div>
