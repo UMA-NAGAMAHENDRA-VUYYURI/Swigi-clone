@@ -6,6 +6,7 @@ import "./signup.css";
 const Signup = () => {
   return (
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <form className="modal-form">
       <div className="input-group">
         <input
@@ -20,6 +21,8 @@ const Signup = () => {
           Full Name
         </label>
 =======
+=======
+>>>>>>> Stashed changes
     <div className="container1">
       {/* Left floating images */}
       {/* <div className="images left">
