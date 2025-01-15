@@ -8,6 +8,7 @@ const Signup = () => {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <form className="modal-form">
       <div className="input-group">
         <input
@@ -22,6 +23,8 @@ const Signup = () => {
           Full Name
         </label>
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
