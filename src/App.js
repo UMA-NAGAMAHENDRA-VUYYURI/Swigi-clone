@@ -17,6 +17,7 @@ import Login from './components/Login';
 import Footer from './components/Footer';
 import Instamart from './components/Instamart';
 import Signup from './components/Signup';
+import ContactForm from './components/ContactForm';
 import SidePanelModal from './components/SidePanelModal';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,14 +31,14 @@ function App() {
 
   return (
     <div>
-      {/* Header is visible on all pages */}
-      <Header />
+          <Header toggleSidebar={toggleSidebar} />
 
       <Routes>
         <Route
           path="/"
           element={
             <>
+              
               <MainSection1 />
               <MainSection2 />
               <MainSection3 />
@@ -58,6 +59,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/Instamart" element={<Instamart />} />
         <Route path="/Contact" element={<ContactUs />} />
+        <Route path="/Contact Form" element={<ContactForm />} />
         <Route path="/Best-places" element={<BestPlacesSection />} />
         <Route path="/SignUp" element={<Signup />} />
 
@@ -67,13 +69,13 @@ function App() {
           element={
             <>
               <Signup />
-              <Footer />
             </>
           }
         />
       </Routes>
 
       {/* Sidebar Modal only visible when sidebar is open */}
+      <Footer />
       <SidePanelModal isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
     </div>
   );

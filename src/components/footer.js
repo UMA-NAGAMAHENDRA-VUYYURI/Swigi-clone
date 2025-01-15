@@ -21,7 +21,7 @@ export const Footer = () => {
                         <li><Link to="sss" className='text-black'>Careers</Link></li>
                         <li><Link to="sss" className='text-black'>Team</Link></li>
                         <li><Link to="sss" className='text-black'>Swiggy One</Link></li>
-                        <li><Link to="sss" className='text-black'>Swiggy Instamart</Link></li>
+                        <li><Link to="Instamart" className='text-black'>Swiggy Instamart</Link></li>
                         <li><Link to="sss" className='text-black'>Swiggy Dineout</Link></li>
                         <li><Link to="sss" className='text-black'>Swiggy Genie</Link></li>
                         <li><Link to="sss" className='text-black'>Minis</Link></li>
@@ -31,7 +31,7 @@ export const Footer = () => {
                 <div className="space-y-4 text-left">
                     <h3 className="font-semibold text-lg">Contact us</h3>
                     <ul className="space-y-2 text-m">
-                        <li><Link to="sss" className='text-black'>Help & Support</Link></li>
+                        <li><Link to="ContactUs" className='text-black'>Help & Support</Link></li>
                         <li><Link to="sss" className='text-black'>Partner with us</Link></li>
                         <li><Link to="sss" className='text-black'>Ride with us</Link></li>
                     </ul>

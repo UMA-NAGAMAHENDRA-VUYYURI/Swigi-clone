@@ -3,12 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faAt, faLock } from "@fortawesome/free-solid-svg-icons";  // Import FontAwesome icons
 import "./SidePanelWithForm.css";
 import "./Signup.css";
+// import "./Sign.css";
 
 const Signup = () => {
-  const [isSignUp, setIsSignUp] = useState(true);  // State to toggle between SignUp and SignIn forms
+  const [isSignup, setIsSignup] = useState(true);  // State to toggle between SignUp and SignIn forms
 
   const toggleForm = () => {
-    setIsSignUp(!isSignUp);  // Toggle between sign-up and sign-in
+    setIsSignup(!isSignup);  // Toggle between sign-up and sign-in
   };
 
   return (
@@ -29,9 +30,9 @@ const Signup = () => {
       </div>
 
       {/* Wrapper for the Sign-Up and Sign-In forms */}
-      <div className={`wrapper ${isSignUp ? "animated-signup" : "animated-signin"}`}>
+      <div className={`wrapper ${isSignup ? "animated-signup" : "animated-signin"}`}>
         {/* Sign-Up Form */}
-        {isSignUp && (
+        {isSignup && (
           <div className="form-container sign-up">
             <h2>Sign Up</h2>
             <div className="form-group">
@@ -67,7 +68,7 @@ const Signup = () => {
         )}
 
         {/* Sign-In Form */}
-        {!isSignUp && (
+        {!isSignup && (
           <div className="form-container sign-in">
             <h2>Login</h2>
             <div className="form-group">
