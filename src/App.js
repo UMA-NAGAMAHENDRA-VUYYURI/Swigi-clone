@@ -31,10 +31,9 @@ function App() {
   return (
     <div>
       {/* Header is visible on all pages */}
-      <Header  />
+      <Header />
 
       <Routes>
-  
         <Route
           path="/"
           element={
@@ -48,6 +47,9 @@ function App() {
               <BestGrocery />
               <Instamart />
               <ContactUs />
+              <BottomNavbar />
+              <MobileNavbar />
+              <Footer />
             </>
           }
         />
@@ -58,19 +60,13 @@ function App() {
         <Route path="/Contact" element={<ContactUs />} />
         <Route path="/Best-places" element={<BestPlacesSection />} />
         <Route path="/SignUp" element={<SignUp />} />
-      </Routes>
 
-     
-      <Routes>
-        <Route path="/SignUp" element={null} />  {/* Prevent navbar/footer on SignUp page */}
-
+        {/* Prevent navbar/footer on SignUp page */}
         <Route
-          path="/"
+          path="/SignUp"
           element={
             <>
-              <BottomNavbar />
-              <MobileNavbar />
-              <Footer />
+              <SignUp />
             </>
           }
         />
