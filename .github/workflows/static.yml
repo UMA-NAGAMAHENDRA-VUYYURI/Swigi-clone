@@ -1,8 +1,7 @@
-# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the default branch (main)
   push:
     branches: ["main"]
 
@@ -29,15 +28,27 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      # Step to check out the repository
       - name: Checkout
         uses: actions/checkout@v4
+
+      # Step to setup GitHub Pages for deployment
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      # Build the project if necessary (example for React)
+      - name: Build project
+        run: |
+          npm install
+          npm run build
+
+      # Upload the built files (e.g., contents of the build folder)
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: './build'  # Adjust this path if your build output is located elsewhere
+
+      # Deploy the built files to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
