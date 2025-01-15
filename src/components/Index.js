@@ -1,49 +1,44 @@
-import React from "react";
-import "./Index.css"; // Add your navbar-specific CSS
-import { Link } from 'react-router-dom';
-const Navbar = () => {
-  return (
-    <header className="navbar">
-      <div className="navbar-container">
-        <div className="navbar-left">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png"
-            alt="Swiggy Logo"
-            className="logo"
-          />
-          <div className="dropdown">
-            <span>
-              Other <i className="fas fa-chevron-down"></i>
-            </span>
-            <div className="dropdown-content">
-              <a href="./Header">Location 1</a>
-              <a href="./Header">Location 2</a>
-            </div>
-          </div>
-        </div>
-        <div className="navbar-right">
-          <a href="./Header" className="navbar-link">
-            <i className="fas fa-briefcase"></i> Swiggy Corporate
-          </a>
-          <a href="./Header" className="navbar-link">
-            <i className="fas fa-search"></i> Search
-          </a>
-          <a href="./Header" className="navbar-link">
-            <i className="fas fa-tags"></i> Offers <span className="new-badge">NEW</span>
-          </a>
-          <a href="./Header" className="navbar-link">
-            <i className="fas fa-question-circle"></i> Help
-          </a>
-          <a href="./Header" className="navbar-link">
-            <i className="fas fa-user"></i> Sign In
-          </a>
-          <a href="./Header" className="navbar-link cart">
-            <i className="fas fa-shopping-cart"></i> Cart <span className="cart-count">0</span>
-          </a>
-        </div>
-      </div>
-    </header>
-  );
-};
+import React from 'react';
 
-export default Navbar;
+function SignUpForm({ toggleForm }) {
+  return (
+    <div className="form-container sign-up">
+      <form>
+        <h2>Sign Up</h2>
+        <div className="form-group">
+          <input type="text" required />
+          <i className="fas fa-user"></i>
+          <label>Username</label>
+        </div>
+        <div className="form-group">
+          <input type="email" required />
+          <i className="fas fa-at"></i>
+          <label>Email</label>
+        </div>
+        <div className="form-group">
+          <input type="password" required />
+          <i className="fas fa-lock"></i>
+          <label>Password</label>
+        </div>
+        <div className="form-group">
+          <input type="password" required />
+          <i className="fas fa-lock"></i>
+          <label>Confirm Password</label>
+        </div>
+        <button type="submit" className="btn">
+          Sign Up
+        </button>
+        <div className="link">
+          <p>
+            You already have an account?{' '}
+            <a href="#" className="signin-link" onClick={toggleForm}>
+              Sign In
+            </a>
+          </p>
+        </div>
+      </form>
+    </div>
+  );
+}
+
+export default SignUpForm;

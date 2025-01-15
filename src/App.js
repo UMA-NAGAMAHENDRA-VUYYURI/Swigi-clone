@@ -1,35 +1,24 @@
-// src/App.js
 import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';  // Don't forget to import Routes and Route from react-router-dom
 import './index.css';
-import Header from './components/Header'; // Ensure these paths are correct
+import Header from './components/Header';
 import MainSection1 from './components/MainSection1';
 import MainSection2 from './components/MainSection2';
 import MainSection3 from './components/MainSection3';
 import MainSection4 from './components/MainSection4';
 import MainSection5 from './components/MainSection5';
 import BestPlacesSection from './components/BestPlacesSection';
-<<<<<<< Updated upstream
-import BestGroceries from './components/BestGroceries';
-import  BottomNavbar  from './components/BottomNavbar';
-import  MobileNavbar  from './components/MobileNavbar';
-import  ContactUs  from './components/ContactUs';
-import  Login  from './components/Login';
-import Footer  from './components/footer';
-import Instamart  from './components/Instamart';
-
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap once in your entry point
-import SidePanelModal from './components/SidePanelModal';
-=======
+import BestGrocery from './components/BestGrocery';
 import BottomNavbar from './components/BottomNavbar';
 import MobileNavbar from './components/MobileNavbar';
 import ContactUs from './components/ContactUs';
 import Login from './components/Login';
+import Footer from './components/Footer';
 import Instamart from './components/Instamart';
-import SignUp from './components/SignUp';
+import SignUp from './components/Signup';
+import SidePanelModal from './components/SidePanelModal';
 
-import { Footer } from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
->>>>>>> Stashed changes
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -37,49 +26,36 @@ function App() {
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
-  return (
-<<<<<<< Updated upstream
-    <div>
-      
-      <Header toggleSidebar={toggleSidebar}/>
-      <MainSection1 />
-      <MainSection2 />
-      <MainSection3 />
-      <MainSection4 />
-      <BestPlacesSection />
-      <MobileNavbar/>
-      <ContactUs/>
-      <SidePanelModal isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-      <Login/>
-      <BestGroceries/>
-      <Instamart/>
-      <MobileNavbar/>
-    </div>
-=======
-    <>
-      {/* Header visible on all pages */}
-      <Header />
 
-      {/* Routes to different pages */}
+  return (
+    <div>
+      {/* Header is visible on all pages */}
+      <Header toggleSidebar={toggleSidebar} />
+
       <Routes>
         {/* Homepage route, renders all sections */}
-        <Route path="/" element={
-          <>
-            <MainSection1 />
-            <MainSection2 />
-            <MainSection3 />
-            <MainSection4 />
-            <MainSection5 />
-          </>
-        } />
-        
+        <Route
+          path="/"
+          element={
+            <>
+              <MainSection1 />
+              <MainSection2 />
+              <MainSection3 />
+              <MainSection4 />
+              <MainSection5 />
+              <BestPlacesSection />
+              <BestGrocery />
+              <Instamart />
+              <ContactUs />
+            </>
+          }
+        />
+
         {/* Other pages */}
         <Route path="/login" element={<Login />} />
         <Route path="/instamart" element={<Instamart />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/best-places" element={<BestPlacesSection />} />
-
-        {/* SignUp page will replace other content when navigated */}
         <Route path="/SignUp" element={<SignUp />} />
       </Routes>
 
@@ -87,16 +63,21 @@ function App() {
       <Routes>
         <Route path="/SignUp" element={null} />  {/* Prevent navbar/footer on SignUp page */}
 
-        <Route path="/" element={
-          <>
-            <BottomNavbar />
-            <MobileNavbar />
-            <Footer />
-          </>
-        } />
+        <Route
+          path="/"
+          element={
+            <>
+              <BottomNavbar />
+              <MobileNavbar />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
-    </>
->>>>>>> Stashed changes
+
+      {/* Sidebar Modal only visible when sidebar is open */}
+      <SidePanelModal isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+    </div>
   );
 }
 

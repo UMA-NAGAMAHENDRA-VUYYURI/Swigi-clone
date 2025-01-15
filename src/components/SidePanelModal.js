@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SidePanelWithForm.css";
 import Login from "./Login";
-import Signup from "./signup";
+import Signup from "./Signup";
 
 const SidePanel = ({ isOpen, toggleSidebar }) => {
   const [mode, setMode] = useState("login"); 
