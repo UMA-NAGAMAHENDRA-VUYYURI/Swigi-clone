@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';  // Don't forget to import Routes and Route from react-router-dom
+import { Routes, Route } from 'react-router-dom';  
 import './index.css';
 import Header from './components/Header';
 import MainSection1 from './components/MainSection1';
@@ -30,10 +30,10 @@ function App() {
   return (
     <div>
       {/* Header is visible on all pages */}
-      <Header toggleSidebar={toggleSidebar} />
+      <Header  />
 
       <Routes>
-        {/* Homepage route, renders all sections */}
+  
         <Route
           path="/"
           element={
@@ -53,13 +53,13 @@ function App() {
 
         {/* Other pages */}
         <Route path="/login" element={<Login />} />
-        <Route path="/instamart" element={<Instamart />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/best-places" element={<BestPlacesSection />} />
+        <Route path="/Instamart" element={<Instamart />} />
+        <Route path="/Contact" element={<ContactUs />} />
+        <Route path="/Best-places" element={<BestPlacesSection />} />
         <Route path="/SignUp" element={<SignUp />} />
       </Routes>
 
-      {/* Bottom Navbar, Mobile Navbar, and Footer always visible except on /SignUp */}
+     
       <Routes>
         <Route path="/SignUp" element={null} />  {/* Prevent navbar/footer on SignUp page */}
 
