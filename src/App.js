@@ -16,7 +16,7 @@ import ContactUs from './components/ContactUs';
 import Login from './components/Login';
 import Footer from './components/Footer';
 import Instamart from './components/Instamart';
-import SignUp from './components/Signup';
+import Signup from './components/Signup';
 import SidePanelModal from './components/SidePanelModal';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -59,14 +59,14 @@ function App() {
         <Route path="/Instamart" element={<Instamart />} />
         <Route path="/Contact" element={<ContactUs />} />
         <Route path="/Best-places" element={<BestPlacesSection />} />
-        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/SignUp" element={<Signup />} />
 
         {/* Prevent navbar/footer on SignUp page */}
         <Route
-          path="/SignUp"
+          path="/Signup"
           element={
             <>
-              <SignUp />
+              <Signup />
             </>
           }
         />
