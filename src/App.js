@@ -67,6 +67,7 @@ function App() {
           element={
             <>
               <Signup />
+              <Footer />
             </>
           }
         />
