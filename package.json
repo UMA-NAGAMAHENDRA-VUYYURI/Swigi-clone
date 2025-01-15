@@ -51,7 +51,6 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "eslint-plugin-jest": "^28.11.0",
     "eslint-plugin-testing-library": "^7.1.1",
     "jest": "^29.7.0",
     "postcss": "^8.4.49",
