@@ -26,10 +26,7 @@ const SidePanel = ({ isOpen, toggleSidebar }) => {
               </div>
               <div className="modal-or-create">
                 or{" "}
-                <a
-                  href="#"
-                  className="create-account-link"
-                  onClick={(e) => {
+                <a href="#" className="create-account-link" onClick={(e) => {
                     e.preventDefault();
                     toggleMode();
                   }}

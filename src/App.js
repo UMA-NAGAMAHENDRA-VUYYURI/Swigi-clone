@@ -42,15 +42,12 @@ function App() {
               <MainSection1 />
               <MainSection2 />
               <MainSection3 />
-              <MainSection4 />
-              <MainSection5 />
+              <MainSection4 /> 
               <BestPlacesSection />
               <BestGrocery />
-              <Instamart />
-              <ContactUs />
               <BottomNavbar />
               <MobileNavbar />
-              <Footer />
+              <MainSection5 />
             </>
           }
         />
@@ -61,7 +58,7 @@ function App() {
         <Route path="/Contact" element={<ContactUs />} />
         <Route path="/Contact Form" element={<ContactForm />} />
         <Route path="/Best-places" element={<BestPlacesSection />} />
-        <Route path="/SignUp" element={<Signup />} />
+        {/* <Route path="/SignUp" element={<Signup />} /> */}
 
         {/* Prevent navbar/footer on SignUp page */}
         <Route

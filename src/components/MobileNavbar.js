@@ -8,7 +8,7 @@ const MobileNavbar = () => {
     <nav className="bottom-navbar">
       <div className="nav-item">
         <i className="fas fa-home"></i>
-        <Link to ="./Home">
+        <Link to ="./">
         <span>Home</span>
         </Link>
       </div>
@@ -22,7 +22,7 @@ const MobileNavbar = () => {
       </div>
       <div className="nav-item">
       <i className="fas fa-user"></i>
-      <Link to ="./Login">
+      <Link to ="./">
         <span>Account</span>
         </Link>
       </div>
