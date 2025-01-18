@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faAt, faLock, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons"; // Import FontAwesome icons
 import "./SidePanelWithForm.css";
-import "./Signup.css";
+import "./signup.css";
 
 const Signup = () => {
   const [isSignup, setIsSignup] = useState(true); // State to toggle between SignUp and SignIn forms
