@@ -9,7 +9,7 @@
   
   .container {
     height: 100%;
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -24,22 +24,23 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     scroll-behavior: smooth;
   }
   
   .menu-dishes {
-    height: 55%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
     display: flex;
-    overflow-y: hidden;
+    justify-content: stretch;
+    /* overflow-y: hidden; */
     flex-grow: 5;
     scroll-behavior: smooth;
   }
   
   .menu-dishes img {
-    height: 190px;
-    width: 190px;
+    height: 200px;
+    /* width: 590px!important; */
   }
   
   .dishes-wrap h1 {

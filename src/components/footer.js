@@ -60,7 +60,7 @@ export const Footer = () => {
                     <h3 className="font-semibold text-lg text-white">Life at Swiggy</h3>
                     <ul className="space-y-2 text-m">
                         <li><Link to="sss" className='text-white'>Explore with Swiggy</Link></li>
-                        <li><Link to="sss" className='text-white'>Swiggy News</Link></li>
+                        <li><Link to="BlogSection" className='text-white'>Swiggy News</Link></li>
                         <li><Link to="sss" className='text-white'>Snackables</Link></li>
                     </ul>
 

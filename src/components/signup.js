@@ -10,11 +10,7 @@ const Signup = () => {
   const [errors, setErrors] = useState({}); // State to store validation errors
   const [passwordVisible, setPasswordVisible] = useState(false); // State to toggle password visibility
 
-  const toggleForm = () => {
-    setIsSignup(!isSignup);
-    setFormData({ username: "", email: "", password: "", confirmPassword: "" }); // Clear form data on toggle
-    setErrors({}); // Clear errors on toggle
-  };
+ 
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -51,9 +47,7 @@ const Signup = () => {
     }
   };
 
-  const togglePasswordVisibility = () => {
-    setPasswordVisible(!passwordVisible);
-  };
+  
 
   return (
     <form className="modal-form" onSubmit={handleSubmit}>
