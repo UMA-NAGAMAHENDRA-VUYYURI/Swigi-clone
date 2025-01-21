@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #4c2a1b;
+    background-color: #ff5200;
     color: white;
     position: relative;
     min-height: 100%;
@@ -92,7 +92,7 @@
       margin: 0px auto;
       border-radius: 16px;
       height: 60px;
-      background-color: rgb(31, 26, 26);
+      background-color: rgb(255, 255, 255);
       border: 1.5px solid rgba(2, 6, 12, 0.15);
   }
 

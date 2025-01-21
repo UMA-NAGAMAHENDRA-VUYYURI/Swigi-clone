@@ -5,7 +5,7 @@
   clear:both;
 }
 header {
-    background-color: #de5ca8;
+    background-color: #ff5200;
     width: 100% !important;
     height:auto !important;
     color: white;
@@ -40,7 +40,7 @@ header {
   
   a {
     text-decoration: none !important;
-    color: white;
+    color: rgb(255, 255, 255);
     /* font-size: 20px; */
   }
   .font a h4{
@@ -67,7 +67,7 @@ header {
     gap: 30px;
     padding: 15px;
   }
-  .get-app {
+  .get-app a{
     display: flex;
     height: 54px;
     padding: 12px 16px;
@@ -83,13 +83,14 @@ header {
     font-weight: 600;
     line-height: 21px;
     outline: 0;
-    background-color:  #311510;
-    color: #fff;
+    background-color:  #ffffff;
+    color: black;
     border: 1px solid #fff;
   }
   
   .sign-in {
-      background: #531616;
+      background: #ffffff;
+      color: black;
       border-radius: 16px;
       display: -webkit-box;
       display: -ms-flexbox;

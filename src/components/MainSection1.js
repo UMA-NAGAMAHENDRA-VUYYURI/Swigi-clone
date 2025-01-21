@@ -13,7 +13,7 @@ const MainSection1= () => {
           </div>
           <div className="search-bar">
             <div className="input-location">
-              <i className="fa fa-search" aria-hidden="true"></i>
+              
               <input type="search" placeholder="Enter your delivery location" />
             </div>
             <div className="input-menu">

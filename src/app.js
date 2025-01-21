@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';  
+import { Routes, Route } from 'react-router-dom';
 
 import './index.css';
 import Header from './components/Header';
@@ -14,15 +14,16 @@ import BottomNavbar from './components/BottomNavbar';
 import MobileNavbar from './components/MobileNavbar';
 import ContactUs from './components/ContactUs';
 import Login from './components/Login';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import Instamart from './components/Instamart';
-import Signup from './components/signup';
+import signup from './components/signup';
 import ContactForm from './components/ContactForm';
 import SidePanelModal from './components/SidePanelModal';
+import BlogSection from './components/BlogSection';
+import Collection from './components/Collection';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
-import FooterSection from './components/FooterSection'; // Adjust the path as needed
+import FooterSection from './components/FooterSection';
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -32,57 +33,41 @@ function App() {
   };
 
   return (
-    <div>
-          <Header toggleSidebar={toggleSidebar} />
+    <div className="App">
+      {/* Header */}
+      <Header />
 
+      {/* Sidebar Modal */}
+      <SidePanelModal isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+
+      {/* Main Sections */}
+      <MainSection1 />
+      <MainSection2 />
+      <MainSection3 />
+      <MainSection4 />
+      <MainSection5 />
+      <Collection />
+
+      {/* Best Sections */}
+      <BestPlacesSection />
+      <BestGrocery />
+
+      {/* Routes */}
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              
-              <MainSection1 />
-              <MainSection2 />
-              <MainSection3 />
-              <MainSection4 /> 
-              <BestPlacesSection />
-              <BestGrocery />
-              <BottomNavbar />
-              <MobileNavbar />
-              <MainSection5 />
-            </>
-          }
-        />
-
-        {/* Other pages */}
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/Instamart" element={<Instamart />} />
-        <Route path="/Contact" element={<ContactUs />} />
-        <Route path="/Contact Form" element={<ContactForm />} />
-        <Route path="/Best-places" element={<BestPlacesSection />} />
-        {/* <Route path="/SignUp" element={<Signup />} /> */}
-
-        {/* Prevent navbar/footer on SignUp page */}
-        <Route
-          path="/Signup"
-          element={
-            <>
-              <Signup />
-            </>
-          }
-        />
+        <Route path="/signup" element={<signup />} />
+        <Route path="/instamart" element={<Instamart />} />
+        <Route path="/BlogSection" element={<BlogSection />} />
       </Routes>
 
-      {/* Sidebar Modal only visible when sidebar is open */}
-      <Footer />
-      <SidePanelModal isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-    <div className="App">
-      {/* Your other components like Navbar, Main Content */}
-      
       {/* Footer */}
-      <FooterSection />
+      <Footer/>
+
+      {/* Bottom Navbar */}
+      <BottomNavbar />
     </div>
   );
 }
 
-import default App;
+export default App;
