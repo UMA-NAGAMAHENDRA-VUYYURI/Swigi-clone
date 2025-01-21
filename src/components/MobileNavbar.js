@@ -22,7 +22,7 @@ const MobileNavbar = () => {
       </div>
       <div className="nav-item">
       <i className="fas fa-user"></i>
-      <Link to ="./">
+      <Link to ="./Signup">
         <span>Account</span>
         </Link>
       </div>
