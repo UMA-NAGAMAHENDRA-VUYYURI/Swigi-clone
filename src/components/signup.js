@@ -61,8 +61,9 @@ const Signup = () => {
         {/* Sign-Up Form */}
         {isSignup && (
           <div className="form-container sign-up active">
-            <h2>Sign Up</h2>
+            {/* <h2>Sign Up</h2> */}
             <div className="form-group">
+            
               <input
                 type="text"
                 name="username"
@@ -71,11 +72,15 @@ const Signup = () => {
                 required
                 aria-label="Username"
               />
+              
+              <label>
               <FontAwesomeIcon icon={faUser} />
-              <label>Username</label>
+                 Username
+                </label>
               {errors.username && <small className="error-message" aria-live="polite">{errors.username}</small>}
             </div>
             <div className="form-group">
+           
               <input
                 type="email"
                 name="email"
@@ -84,11 +89,15 @@ const Signup = () => {
                 required
                 aria-label="Email"
               />
+              
+              <label>
               <FontAwesomeIcon icon={faAt} />
-              <label>Email</label>
+              Email
+              </label>
               {errors.email && <small className="error-message" aria-live="polite">{errors.email}</small>}
             </div>
             <div className="form-group">
+            
               <input
                 type={passwordVisible ? "text" : "password"}
                 name="password"
@@ -97,16 +106,11 @@ const Signup = () => {
                 required
                 aria-label="Password"
               />
+          
+              <label>
               <FontAwesomeIcon icon={faLock} />
-              <button
-                type="button"
-                className="password-toggle"
-                onClick={togglePasswordVisibility}
-                aria-label="Toggle password visibility"
-              >
-                <FontAwesomeIcon icon={passwordVisible ? faEyeSlash : faEye} />
-              </button>
-              <label>Password</label>
+              Password
+              </label>
               {errors.password && <small className="error-message" aria-live="polite">{errors.password}</small>}
             </div>
             <div className="form-group">
@@ -118,68 +122,15 @@ const Signup = () => {
                 required
                 aria-label="Confirm Password"
               />
-              <FontAwesomeIcon icon={faLock} />
-              <label>Confirm Password</label>
+              <label><FontAwesomeIcon icon={passwordVisible ? faEyeSlash : faEye} />
+              Confirm Password
+              </label>
               {errors.confirmPassword && <small className="error-message" aria-live="polite">{errors.confirmPassword}</small>}
             </div>
             <button type="submit" className="btn">Sign Up</button>
-            <div className="link">
-              <p>
-                Already have an account? <button type="button" onClick={toggleForm} className="signin-link">Sign In</button>
-              </p>
-            </div>
           </div>
         )}
 
-        {/* Sign-In Form */}
-        {!isSignup && (
-          <div className="form-container sign-in active">
-            <h2>Login</h2>
-            <div className="form-group">
-              <input
-                type="text"
-                name="username"
-                value={formData.username}
-                onChange={handleInputChange}
-                required
-                aria-label="Username"
-              />
-              <FontAwesomeIcon icon={faUser} />
-              <label>Username</label>
-              {errors.username && <small className="error-message" aria-live="polite">{errors.username}</small>}
-            </div>
-            <div className="form-group">
-              <input
-                type={passwordVisible ? "text" : "password"}
-                name="password"
-                value={formData.password}
-                onChange={handleInputChange}
-                required
-                aria-label="Password"
-              />
-              <FontAwesomeIcon icon={faLock} />
-              <button
-                type="button"
-                className="password-toggle"
-                onClick={togglePasswordVisibility}
-                aria-label="Toggle password visibility"
-              >
-                <FontAwesomeIcon icon={passwordVisible ? faEyeSlash : faEye} />
-              </button>
-              <label>Password</label>
-              {errors.password && <small className="error-message" aria-live="polite">{errors.password}</small>}
-            </div>
-            <div className="forgot-pass">
-              <a href="./">Forgot password?</a>
-            </div>
-            <button type="submit" className="btn">Login</button>
-            <div className="link">
-              <p>
-                Don’t have an account? <button type="button" onClick={toggleForm} className="signup-link">Sign Up</button>
-              </p>
-            </div>
-          </div>
-        )}
       </div>
     </form>
   );
