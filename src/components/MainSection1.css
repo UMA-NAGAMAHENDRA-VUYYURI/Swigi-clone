@@ -83,13 +83,19 @@
   
   .input-location input,
   .input-menu input {
-    height: 54px;
-    background-color: white;
-    border-radius: 10px;
-    border: none;
-    font-size: 20px;
-    padding: 0px 0 0 16px;
+      position: relative;
+      display: flex;
+      -webkit-box-align: center;
+      padding: 15px;
+      align-items: center;
+      width: 100%;
+      margin: 0px auto;
+      border-radius: 16px;
+      height: 60px;
+      background-color: rgb(255, 255, 255);
+      border: 1.5px solid rgba(2, 6, 12, 0.15);
   }
+
   
   .input-location input {
     width: 350px;

@@ -1,15 +1,11 @@
 import React from 'react';
 import './MainSection4.css';
 
-// Mock data for images
 const items = [
-  { id: 1, src: '/images/frui2.avif', alt: 'Fresh Fruits 1' },
-  { id: 2, src: '/images/fruit10.avif', alt: 'Fresh Fruits 2' },
-  { id: 3, src: '/images/frui5.avif', alt: 'Fresh Fruits 3' },
-  { id: 4, src: '/images/frui9.avif', alt: 'Fresh Fruits 4' },
-  { id: 5, src: '/images/fruit10.avif', alt: 'Fresh Fruits 5' },
-  { id: 6, src: '/images/frui5.avif', alt: 'Fresh Fruits 6' },
-  { id: 7, src: '/images/frui9.avif', alt: 'Fresh Fruits 7' },
+  { id: 1, src: '/images/frui2.avif', alt: 'Basket of fresh apples' },
+  { id: 2, src: '/images/fruit10.avif', alt: 'Fresh oranges and bananas' },
+  { id: 3, src: '/images/frui5.avif', alt: 'Mix of fresh fruits' },
+  { id: 4, src: '/images/frui9.avif', alt: 'Fresh berries' },
 ];
 
 function MainSection4() {
@@ -23,9 +19,13 @@ function MainSection4() {
           <div className="menu-instamart">
             {items.map((item) => (
               <div key={item.id} className="menu-item">
-                <a href="javascript:void(0);">
-                  <img src={item.src} alt={item.alt} />
-                </a>
+                <button onClick={() => console.log(`Clicked on ${item.alt}`)}>
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    onError={(e) => (e.target.src = '/images/fallback-image.avif')}
+                  />
+                </button>
               </div>
             ))}
           </div>
