@@ -22,7 +22,7 @@
   align-items: center;
   min-width: 1240px;
   position: relative;
-  background-color: #ff5200;
+  background-color: #cc4308;
    flex-grow: 1;
   width: 100%;
   }
@@ -40,7 +40,7 @@
   .specific a img {
     height: 280px;
     width: 280px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(46, 13, 13);
     border-radius: 15%;
   }
   .specific-size a img {

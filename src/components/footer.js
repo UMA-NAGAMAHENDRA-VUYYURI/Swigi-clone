@@ -5,7 +5,7 @@ import { FaLinkedinIn, FaInstagram, FaFacebook, FaPinterest, FaTwitter } from 'r
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className="flex-col items-center w-full py-2 bg-gray-200">
+        <footer className="flex-col items-center w-full py-2 bg-pink-300">
             <div className="max-w-screen-xl mx-auto px-4 py-8 grid gap-8 md:grid-cols-5 items-start">
                 <div className="space-y-4">
                     <div className="flex flex-col items-center">
@@ -57,7 +57,7 @@ export const Footer = () => {
                 </div>
 
                 <div className="space-y-4 md:ml-1 text-left">
-                    <h3 className="font-semibold text-lg">Life at Swiggy</h3>
+                    <h3 className="font-semibold text-lg ">Life at Swiggy</h3>
                     <ul className="space-y-2 text-m">
                         <li><Link to="sss" className='text-black'>Explore with Swiggy</Link></li>
                         <li><Link to="sss" className='text-black'>Swiggy News</Link></li>
