@@ -16,7 +16,7 @@ import ContactUs from './components/ContactUs';
 import Login from './components/Login';
 import Footer from './components/Footer';
 import Instamart from './components/Instamart';
-import signup from './components/signup';
+import Signup from './components/Signup';
 import ContactForm from './components/ContactForm';
 import SidePanelModal from './components/SidePanelModal';
 import BlogSection from './components/BlogSection';
@@ -56,7 +56,7 @@ function App() {
       <Routes>
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<signup />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/instamart" element={<Instamart />} />
         <Route path="/BlogSection" element={<BlogSection />} />
       </Routes>
