@@ -87,10 +87,12 @@ export const Footer = () => {
             </div>
 
             <div className="border-t border-gray-800 my-4"></div>
-            <div className=" text-white max-w-screen-xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-m">
-                <span class="text-white">For better experience, download the Swiggy app now</span>
-                <img src={`${process.env.PUBLIC_URL}/images/AppStore.avif`} alt="App Store icon" />
-                <img src={`${process.env.PUBLIC_URL}/images/GooglePlay.avif`} alt="Google Play icon" />
+            <div className="text-white max-w-screen-xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-m">
+                <div className="flex items-center space-x-4">
+                    <span className="text-white">For better experience, download the Swiggy app now</span>
+                    <img src={`${process.env.PUBLIC_URL}/images/AppStore.avif`} alt="App Store icon" />
+                    <img src={`${process.env.PUBLIC_URL}/images/GooglePlay.avif`} alt="Google Play icon" />
+                </div>
             </div>
         </footer>
     );

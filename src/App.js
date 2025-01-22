@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-
 import './index.css';
 import Header from './components/Header';
 import MainSection1 from './components/MainSection1';
@@ -17,14 +16,11 @@ import Login from './components/Login';
 import Footer from './components/Footer';
 import Instamart from './components/Instamart';
 import Signup from './components/Signup';
-
 import ContactForm from './components/ContactForm';
 import SidePanelModal from './components/SidePanelModal';
 import BlogSection from './components/BlogSection';
 import Collection from './components/Collection';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-import FooterSection from './components/FooterSection';
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -46,7 +42,6 @@ function App() {
       <MainSection2 />
       <MainSection3 />
       <MainSection4 />
-      <MainSection5 />
 
       {/* Best Sections */}
       <BestPlacesSection />
@@ -64,7 +59,7 @@ function App() {
       </Routes>
 
       {/* Footer */}
-      <Footer/>
+      <Footer />
 
       {/* Bottom Navbar */}
       <BottomNavbar />
