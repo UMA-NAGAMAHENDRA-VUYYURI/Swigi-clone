@@ -5,22 +5,24 @@ import { Link } from "react-router-dom";
 
 
 const Login = () => {
-  const [mobile, setMobile] = useState(""); // Changed to 'mobile'
-  const [error, setError] = useState(""); // Error state for validation
+  const [username, setUsername] = useState(""); // State for username
+  const [password, setPassword] = useState(""); // State for password
+  const [error, setError] = useState(""); //Error state for validation
 
   const handleLogin = (e) => {
     e.preventDefault();
 
-    if (mobile.length !== 10) {
-      setError("Please enter a valid 10-digit mobile number.");
+    if (!username || !password) {
+      setError("Please enter valid details");
       return;
     }
 
-    console.log("Logged in with mobile:", mobile);
+    console.log("Logged in with username: ", username);
   };
 
   const handleCancel = () => {
-    setMobile("");
+    setUsername("");
+    setPassword("");
     setError(""); 
   };
 
@@ -29,18 +31,35 @@ const Login = () => {
       <form className="modal-form" onSubmit={handleLogin}>
         <div className="input-group">
           <input
-            type="tel"
-            name="mobile"
-            id="mobile"
+            type="text"
+            name="username"
+            id="username"
             className="input-field"
-            maxLength="10"
-            value={mobile}
-            onChange={(e) => setMobile(e.target.value)}
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+           
             autoComplete="off"
             required
           />
-          <label htmlFor="mobile" className="input-label">
-            Phone number
+          <label htmlFor="username" className="input-label">
+            Username
+          </label>
+        </div>
+
+        <div className="input-group">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            className="input-field"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+           
+            autoComplete="off"
+            required
+          />
+          <label htmlFor="password" className="input-label">
+            Password
           </label>
         </div>
 
