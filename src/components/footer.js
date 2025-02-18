@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaLinkedinIn, FaInstagram, FaFacebook, FaPinterest, FaTwitter } from 'react-icons/fa';
+import { FaLinkedinIn, FaInstagram, FaFacebook, FaPinterest} from 'react-icons/fa';
 
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -80,7 +80,7 @@ export const Footer = () => {
                             <FaPinterest size={24} />
                         </a>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white-500 hover:text-blue-400 transition duration-300 ease-in-out">
-                            <FaTwitter size={24} />
+                            <img src="https://th.bing.com/th/id/OIP.7VRRlhhpqXtDSxhfL-BkzAHaG0?w=211&amp;h=194&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.3&amp;pid=1.7" height="25px" width="25px"></img>
                         </a>
                     </div>
                 </div>
